@@ -60,7 +60,7 @@ app.get('/download', (req, res) => {
     
     const promise = Archiver.main();
     promise.then(() => {
-        res.send(path.relative(__dirname, path.join(__dirname, 'assets', 'archive.zip')))
+        res.send(path.resolve(path.join(__dirname, 'assets', 'archive.zip')))
     })
 })
 
