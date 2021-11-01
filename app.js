@@ -1,9 +1,8 @@
 const express = require('express')
 const path = require('path')
 const fs = require('fs-extra')
-const http = require('http');
 const app = express()
-const port = 3000
+const port = process.env.PORT || 5000
 const minify = require('html-minifier').minify;
 
 const zip = require("zip-a-folder").zip
