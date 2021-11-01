@@ -60,6 +60,7 @@ app.get('/download', (req, res) => {
     
     const promise = Archiver.main();
     promise.then(() => {
+        console.log(`============== DIRNAME is ${__dirname} ==================`)
         res.send(path.join(__dirname, 'assets', 'archive.zip'))
     })
 })
