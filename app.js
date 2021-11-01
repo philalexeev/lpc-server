@@ -12,11 +12,11 @@ app.use(express.json())
 
 app.get('/download', (req, res) => {
     fs.copySync(
-        path.join(__dirname, 'assets', 'beeline'),
-        path.join(__dirname, 'assets', 'outfiles')
+        path.join(__dirname, 'app', 'assets', 'beeline'),
+        path.join(__dirname, 'app', 'assets', 'outfiles')
     )
 
-    const outIndexPath = path.join(__dirname, 'assets', 'outfiles', 'order.html')
+    const outIndexPath = path.join(__dirname, 'app', 'assets', 'outfiles', 'order.html')
 
     let resultCss = ''
     req.query.lpCssList.forEach(compName => {
@@ -52,15 +52,15 @@ app.get('/download', (req, res) => {
     class Archiver {
         static async main() {
             await zip(
-                path.join(__dirname, 'assets', 'outfiles'),
-                path.join(__dirname, 'assets', 'archive.zip')
+                path.join(__dirname, 'app', 'assets', 'outfiles'),
+                path.join(__dirname, 'app', 'assets', 'archive.zip')
             );
         }
     }
     
     const promise = Archiver.main();
     promise.then(() => {
-        res.send(path.join('temp', 'bella.jpg'))
+        res.send(path.join('assets', 'archive.zip'))
     })
 })
 
