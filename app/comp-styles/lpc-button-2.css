@@ -1,0 +1,115 @@
+.btn-wrapper[data-id="lpc-button-2"] {
+    position: relative;
+    width: 100%;
+    font-size: 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.main .btn-wrapper[data-id="lpc-button-2"] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+[data-id="lpc-button-2"] #activation-btn {
+    position: relative;
+    width: 80%;
+    height: 25vh;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    background-color: #2c3463;
+    border: none;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+[data-id="lpc-button-2"] .activation-button__inner-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: inline-flex;
+}
+
+[data-id="lpc-button-2"] .activation-btn__text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+[data-id="lpc-button-2"] .activation-btn__text-wrapper--left {
+    background-color: #5260af;
+}
+
+[data-id="lpc-button-2"] .activation-btn__text {
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1;
+    color: #fff;
+    text-shadow: 0 4px 7px rgba(0, 0, 0, 0.31);
+    letter-spacing: -1px;
+}
+
+[data-id="lpc-button-2"] .activation-btn__text::after {
+    content: '';
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    margin-left: 9px;
+    margin-bottom: -6px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-filter: drop-shadow(0 4px 7px rgba(0, 0, 0, 0.31));
+    filter: drop-shadow(0 4px 7px rgba(0, 0, 0, 0.31));
+}
+
+[data-id="lpc-button-2"] .activation-btn__text-wrapper--left .activation-btn__text::after {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20V0l18 10L0 20z' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+[data-id="lpc-button-2"] .activation-btn__text-wrapper--right .activation-btn__text::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff'%3E%3Cpath d='M7 2V0h10v2H7zm0 4h10V4H7v2zm10 7V8H7v5H1l11 11 11-11h-6z'/%3E%3C/svg%3E");
+}
+
+[data-id="lpc-button-2"] #activation-btn+div {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+}
+
+[data-id="lpc-button-2"] .price {
+    display: inline-block;
+    margin: 5px auto 0;
+    padding-bottom: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 17px;
+    color: #545454;
+    background-color: #fff;
+}
+
+@media screen and (max-height: 250px) and (orientation: landscape) {
+    .btn-wrapper[data-id="lpc-button-2"] {
+        top: auto;
+        bottom: 72px;
+        -webkit-transform: translate(0, -23px);
+        -ms-transform: translate(0, -23px);
+        transform: translate(0, -23px);
+    }
+}

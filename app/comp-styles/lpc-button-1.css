@@ -1,0 +1,94 @@
+.btn-wrapper[data-id="lpc-button-1"] {
+    position: relative;
+    width: 100%;
+    font-size: 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.main .btn-wrapper[data-id="lpc-button-1"] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+[data-id="lpc-button-1"] #activation-btn {
+    position: relative;
+    display: inline-block;
+    width: 80%;
+    height: 25vh;
+    text-decoration: none;
+    text-align: center;
+    background-color: #2c3463;
+    border: none;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+[data-id="lpc-button-1"] #activation-btn>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: "Open Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #fff;
+    text-shadow: 0 4px 7px rgba(0, 0, 0, 0.31);
+    letter-spacing: -1px;
+}
+
+[data-id="lpc-button-1"] #activation-btn>span::after {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    content: "";
+    display: block;
+    width: 24px;
+    height: 28px;
+    margin-left: 9px;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20V0l18 10L0 20z' fill='%23fff'/%3E%3C/svg%3E");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-filter: drop-shadow(0 4px 7px rgba(0, 0, 0, 0.31));
+    filter: drop-shadow(0 4px 7px rgba(0, 0, 0, 0.31));
+}
+
+[data-id="lpc-button-1"] #activation-btn+div {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+}
+
+[data-id="lpc-button-1"] .price {
+    display: inline-block;
+    margin: 5px auto 0;
+    padding-bottom: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 17px;
+    color: #545454;
+    background-color: #fff;
+}
+
+@media screen and (max-height: 250px) and (orientation: landscape) {
+    .btn-wrapper[data-id="lpc-button-1"] {
+        top: auto;
+        bottom: 72px;
+        -webkit-transform: translate(0, -23px);
+        -ms-transform: translate(0, -23px);
+        transform: translate(0, -23px);
+    }
+}

@@ -1,0 +1,19 @@
+.rules[data-id="lpc-footer-1"] {
+    position: relative;
+    padding: 2px;
+    text-align: center;
+    color: #fff;
+    background-color: #333;
+}
+
+[data-id="lpc-footer-1"] .rules__provider,
+[data-id="lpc-footer-1"] .rules__phone,
+[data-id="lpc-footer-1"] .rules__mail,
+[data-id="lpc-footer-1"] .rules__agreement {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+}

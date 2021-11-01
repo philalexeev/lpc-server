@@ -1,0 +1,32 @@
+.header[data-id="lpc-header-3"] {
+    position: relative;
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: lightgoldenrodyellow;
+}
+
+[data-id="lpc-header-3"] .header__title-box {
+    margin-left: 5px;
+    text-align: center;
+}
+
+[data-id="lpc-header-3"] .header__title {
+    font-size: 22px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+[data-id="lpc-header-3"] .header__subtitle {
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+[data-id="lpc-header-3"] .header__age {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    margin-left: auto;
+    font-size: 20px;
+}

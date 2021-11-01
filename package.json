@@ -1,0 +1,27 @@
+{
+  "name": "lp-constructor-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "devDependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.13"
+  },
+  "dependencies": {
+    "client-zip": "^2.0.0",
+    "file-saver": "^2.0.5",
+    "fs-extra": "^10.0.0",
+    "html": "^1.0.0",
+    "html-minifier": "^4.0.0",
+    "jszip": "^3.7.1",
+    "ncp": "^2.0.0",
+    "posthtml": "^0.16.5",
+    "posthtml-beautify": "^0.7.0",
+    "prettier": "2.4.1",
+    "pretty": "^2.0.0",
+    "zip-a-folder": "^1.1.0"
+  }
+}
